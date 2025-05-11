@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container" data-aos="zoom-in">
+    <h1>🛒 Lista de Compras</h1>
+
+    <form id="form-adicionar">
+        <input type="text" id="nome" placeholder="Nome do produto que está faltando..." required>
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Valor Unitário (R$)</th>
+            <th>Quantidade</th>
+            <th id="total">Total</th>
+            <th id="a">Excluir</th>
+        </tr>
+        </thead>
+        <tbody id="lista-produtos"></tbody>
+    </table>
+
+    <h2>Total Geral: R$ <span id="total-geral">0.00</span></h2>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init(); 
+    </script>
+
+    <script src="script.js"></script>
+
+    <script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js")
+        .then(reg => console.log("Service Worker registrado!", reg))
+        .catch(err => console.error("Erro ao registrar o Service Worker:", err));
+    }
+    </script>
+</body>
+</html>

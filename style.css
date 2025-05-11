@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #252622;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 16px;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(1, 1, 1, 0.220),
+                0 -8px 16px rgba(0, 0, 0, 0.220) ;
+    margin-top: 100px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    margin: px auto 0 auto;
+    padding: 10px;
+    background-color: #167600;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4d5761;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 9px;
+}
+
+th, td {
+  padding: 6px 10px;
+  border-bottom: 1px solid #000000;
+  text-align: center;
+}
+
+th {
+  background-color: #4d5761;
+  color: white;
+}
+
+#a {
+  background-color: #e10000;
+  color: white;
+}
+
+td input {
+  width: 80px;
+  padding: 0.3rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  table {
+    font-size: 0.85rem;
+  }
+
+  td input {
+    width: 60px;
+  }
+
+  button {
+    padding: 8px;
+  }
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
