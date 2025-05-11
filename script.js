@@ -23,6 +23,7 @@ function renderizarProdutos() {
     inputValor.type = "number";
     inputValor.min = "0";
     inputValor.value = produto.valor;
+    inputValor.classList.add("valor");
     inputValor.oninput = () => {
         produto.valor = parseFloat(inputValor.value) || 0;
       produto.total = produto.valor * produto.quantidade;
@@ -36,6 +37,7 @@ function renderizarProdutos() {
     inputQtd.type = "number";
     inputQtd.min = "0";
     inputQtd.value = produto.quantidade;
+    inputQtd.classList.add("quantidade");
     inputQtd.oninput = () => {
         produto.quantidade = parseFloat(inputQtd.value) || 0;
       produto.total = produto.valor * produto.quantidade;

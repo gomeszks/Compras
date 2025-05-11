@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 700px;
+    max-width: 420px;
     margin: auto;
     padding: 16px;
     background: rgb(255, 255, 255);
@@ -19,38 +19,41 @@ body {
 
 h1, h2 {
     text-align: center;
+    font-size: 20px;
 }
 
 form {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 8px;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 2px;
 }
 
 input[type="text"] {
+    flex: 1;
+    height: 11px;
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 10px;
+    font-size: 12px;
 }
 
 button {
     display: block;
-    margin: px auto 0 auto;
+    margin: 1px auto 0 auto;
     padding: 10px;
     background-color: #167600;
     color: white;
     border: none;
     border-radius: 9px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #4d5761;
+    background-color: #14af00;
 }
 
 table {
@@ -61,8 +64,9 @@ table {
 
 th, td {
   padding: 6px 10px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #b9b9b9;
   text-align: center;
+  font-size: 9px;
 }
 
 th {
@@ -106,4 +110,18 @@ td input {
 .fade-enter-active {
   opacity: 1;
   transform: translateY(0);
+}
+
+.valor{
+  height: 10px;
+  padding: 5px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.quantidade{
+  height: 10px;
+  padding: 5px;
+  text-align: center;
+  font-size: 10px;
 }
